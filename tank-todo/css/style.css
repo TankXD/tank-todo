@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nunito:wght@200;300;400;500;600;700&display=swap");
+/* 폰트 */
+
+@import "login.css";
+@import "main.css";
+@import "variable.css";
+
+body {
+  background-color: #b5c3c6;
+  font-family: "Nunito", sans-serif;
+}
+.main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
