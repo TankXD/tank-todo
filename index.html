@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/login.js"></script>
+  </head>
+  <body>
+    <div class="main-screen">
+      <main class="main-box">
+        <section class="content-left"></section>
+        <section class="content-center"></section>
+        <section class="content-right">
+          <div class="greeting"><h1></h1></div>
+          <div></div>
+          <div class="btn">
+            <form class="clear-form"></form>
+            <form class="logout-form">
+              <button type="submit">Logout</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="login-screen">
+      <form class="login-form">
+        <p class="login-form__title">What's your name?</p>
+        <input
+          class="login-form__text"
+          required
+          type="text"
+          placeholder="Please enter your name"
+        />
+        <button class="login-form__btn" type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
