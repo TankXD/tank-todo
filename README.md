@@ -3,4 +3,4 @@
 
 my first JAVASCRIPT 
 
-no Copy, only vanila JS
+HTML & CSS & VANILA JS
