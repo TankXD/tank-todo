@@ -6,16 +6,25 @@ const input = document.querySelector(".login-form__text");
 // main screen
 const contentRight = document.querySelector(".main-box .content-right");
 const greeting = document.querySelector(".greeting");
+const h1 = document.querySelector(".greeting h1");
 const logoutForm = contentRight.querySelector(".btn .logout-form");
 
 //hidden classname variable
 const HIDDEN_CLASS = "hidden";
 
+//name
+const localName = localStorage.getItem("name");
+
+if (localStorage.getItem("name") === null) {
+  loginScreen.classList.remove(HIDDEN_CLASS);
+} else {
+  h1.innerText = `Hi, ${localName}`;
+}
+
 const handleAccess = {
   login: function (event) {
     event.preventDefault();
 
-    const h1 = document.querySelector(".greeting h1");
     const name = input.value;
     h1.innerText = "Hi, " + name;
     greeting.prepend(h1);

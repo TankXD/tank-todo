@@ -1,7 +1,7 @@
 :root {
-  --font-large: 30px;
-  --font-medium: 24px;
-  --font-normal: 16px;
+  --font-large: 34px;
+  --font-medium: 26px;
+  --font-normal: 18px;
   --font-small: 14px;
 
   --font-bold: 700;
@@ -9,4 +9,7 @@
   --font-regular: 400;
 
   --khaki: #4b8569;
+  --blue: #b9cfe9;
+  --grey: #d7dae2;
+  --navy: #556f94;
 }

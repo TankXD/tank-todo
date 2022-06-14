@@ -4,15 +4,17 @@
 @import "login.css";
 @import "main.css";
 @import "variable.css";
+@import "clock.css";
+@import "reset.css";
 
 body {
-  background-color: #b5c3c6;
   font-family: "Nunito", sans-serif;
 }
 .main-screen {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .hidden {

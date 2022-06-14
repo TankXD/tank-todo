@@ -7,11 +7,17 @@
     <title>Todolist</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/login.js"></script>
+    <script defer src="js/clock.js"></script>
   </head>
   <body>
     <div class="main-screen">
       <main class="main-box">
-        <section class="content-left"></section>
+        <section class="content-left">
+          <div class="clock-box">
+            <h4 class="clock-box__time"></h4>
+            <span class="clock-box__date"></span>
+          </div>
+        </section>
         <section class="content-center"></section>
         <section class="content-right">
           <div class="greeting"><h1></h1></div>
@@ -25,7 +31,7 @@
         </section>
       </main>
     </div>
-    <div class="login-screen">
+    <div class="login-screen hidden">
       <form class="login-form">
         <p class="login-form__title">What's your name?</p>
         <input

@@ -1,0 +1,23 @@
+.clock-box {
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 250px;
+  height: 130px;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-box__time {
+  font-weight: var(--font-bold);
+  font-size: var(--font-large);
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.clock-box__date {
+  font-size: var(--font-normal);
+}
