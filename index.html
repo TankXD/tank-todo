@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/login.js"></script>
     <script defer src="js/clock.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/84cbe2bb98.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main-screen">
@@ -20,12 +25,25 @@
         </section>
         <section class="content-center"></section>
         <section class="content-right">
-          <div class="greeting"><h1></h1></div>
-          <div></div>
-          <div class="btn">
-            <form class="clear-form"></form>
+          <div class="greeting">
+            <h1></h1>
+          </div>
+          <div class="music-box">
+            <iframe
+              width="300"
+              height="300"
+              src="https://www.youtube.com/embed/Zy_KuTFwot4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="logout-box">
             <form class="logout-form">
-              <button type="submit">Logout</button>
+              <button type="submit" class="logout-form__btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </button>
             </form>
           </div>
         </section>

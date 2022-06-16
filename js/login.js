@@ -7,7 +7,7 @@ const input = document.querySelector(".login-form__text");
 const contentRight = document.querySelector(".main-box .content-right");
 const greeting = document.querySelector(".greeting");
 const h1 = document.querySelector(".greeting h1");
-const logoutForm = contentRight.querySelector(".btn .logout-form");
+const logoutForm = document.querySelector(".logout-form");
 
 //hidden classname variable
 const HIDDEN_CLASS = "hidden";
