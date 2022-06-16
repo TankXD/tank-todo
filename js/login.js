@@ -46,4 +46,4 @@ const handleAccess = {
 };
 
 loginForm.addEventListener("submit", handleAccess.login);
-logoutForm.addEventListener("submit", handleAccess.logout);
+logoutForm.addEventListener("click", handleAccess.logout);

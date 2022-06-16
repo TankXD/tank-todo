@@ -1,0 +1,46 @@
+.button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.button-box form:first-child {
+  margin-right: 10px;
+}
+.button-box form {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgba(129, 129, 129, 0.815);
+  border-radius: 10px;
+  color: white;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  text-align: center;
+  box-shadow: 2px 2px 15px rgba(155, 154, 172, 0.986);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-box .mode-form:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+  transform: scale(1.1);
+}
+.button-box .logout-form:hover {
+  background-color: var(--navy);
+  transform: scale(1.1);
+}
+
+.button-box button {
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button-box span {
+  font-size: 21px;
+  margin-left: 5px;
+}
+.button-box i {
+  font-size: 18px;
+}

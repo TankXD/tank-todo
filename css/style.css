@@ -8,6 +8,7 @@
 @import "reset.css";
 @import "greeting.css";
 @import "button.css";
+@import "music.css";
 
 body {
   font-family: "Nunito", sans-serif;
@@ -20,5 +21,9 @@ body {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+}
+
+.blackmode {
+  background-color: black;
 }

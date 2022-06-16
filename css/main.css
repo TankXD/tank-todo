@@ -1,5 +1,5 @@
 .main-box {
-  width: 1200px;
+  width: 1100px;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.589);
   border: 1px solid #d7dae2;
@@ -10,9 +10,9 @@
 }
 
 .content-left {
-  width: 350px;
+  width: 300px;
   height: 550px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
 }

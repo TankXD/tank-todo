@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/login.js"></script>
     <script defer src="js/clock.js"></script>
+    <script defer src="js/darkmode.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/84cbe2bb98.js"
@@ -39,8 +40,15 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="logout-box">
+          <div class="button-box">
+            <form class="mode-form">
+              <span>mode</span>
+              <button type="submit" class="mode-form__btn">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+              </button>
+            </form>
             <form class="logout-form">
+              <span>logout</span>
               <button type="submit" class="logout-form__btn">
                 <i class="fa-solid fa-right-from-bracket"></i>
               </button>
