@@ -17,18 +17,22 @@
   justify-content: center;
 }
 .content-center {
-  width: 500px;
+  width: 400px;
   height: 550px;
-  /* border: 1px solid black; */
+  border: 1px solid #d7dae2;
+  border-radius: var(--border-normal);
 }
 .content-right {
   width: 350px;
   height: 600px;
   /* border: 1px solid black; */
+
   border-radius: var(--border-normal);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--grey);
+  position: relative;
+  right: -25px;
 }

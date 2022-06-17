@@ -9,6 +9,7 @@
     <script defer src="js/login.js"></script>
     <script defer src="js/clock.js"></script>
     <script defer src="js/darkmode.js"></script>
+    <script defer src="js/todo.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/84cbe2bb98.js"
@@ -24,7 +25,19 @@
             <span class="clock-box__date"></span>
           </div>
         </section>
-        <section class="content-center"></section>
+        <section class="content-center">
+          <div class="todo-box">
+            <h2>To-Do List</h2>
+            <form class="todo-form">
+              <input
+                required
+                type="text"
+                placeholder="Please enter your to-do"
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+        </section>
         <section class="content-right">
           <div class="greeting">
             <h1></h1>

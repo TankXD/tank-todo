@@ -9,6 +9,7 @@
 @import "greeting.css";
 @import "button.css";
 @import "music.css";
+@import "todo.css";
 
 body {
   font-family: "Nunito", sans-serif;
@@ -25,5 +26,9 @@ body {
 }
 
 .blackmode {
-  background-color: black;
+  background-color: #191c1d;
+}
+
+.blackmode-box {
+  background-color: #1a1e1e;
 }
