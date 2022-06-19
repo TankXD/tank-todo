@@ -1,14 +1,16 @@
 .greeting {
   margin-top: 10px;
-  width: 300px;
-  height: 100px;
+  width: 250px;
+
+  height: 70px;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   font-weight: var(--font-bold);
   border-radius: var(--border-normal);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--navy);
-  box-shadow: 2px 2px 13px #989cac62;
+  /* box-shadow: 2px 2px 13px #989cac62; */
+  box-shadow: var(--shadow-normal);
 }

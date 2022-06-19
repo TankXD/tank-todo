@@ -12,25 +12,16 @@
 @import "todo.css";
 @import "weather.css";
 @import "link.css";
+@import "quote.css";
 
 body {
   font-family: "Nunito", sans-serif;
-}
-.main-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .hidden {
   visibility: hidden;
 }
 
-.blackmode {
-  background-color: #191c1d;
-}
-
-.blackmode-box {
-  background-color: #1a1e1e;
+.white-font {
+  color: white;
 }

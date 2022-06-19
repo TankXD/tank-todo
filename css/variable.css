@@ -1,5 +1,5 @@
 :root {
-  --font-large: 34px;
+  --font-large: 32px;
   --font-medium: 28px;
   --font-normal: 18px;
   --font-small: 14px;
@@ -14,4 +14,8 @@
   --navy: #556f94;
 
   --border-normal: 15px;
+
+  --shadow-normal: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
+  --scale-normal: scale(1.03);
 }

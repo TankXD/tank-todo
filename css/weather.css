@@ -1,19 +1,37 @@
 .weather-box {
-  margin-top: 50px;
+  background-color: rgba(205, 215, 238, 0.11);
+
   position: relative;
   width: 250px;
-  height: 200px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
+  border-radius: var(--border-normal);
+
+  box-shadow: var(--shadow-normal);
+  transition: transform 0.2s ease-in-out;
+}
+
+.weather-box:hover {
+  transform: scale(1.1);
+}
+
+.weather-box__left,
+.weather-box__right {
+  margin-top: 30px;
+  box-sizing: content-box;
+}
+.weather-box__right {
+  margin-right: 15px;
 }
 
 .weather-title {
   position: absolute;
   font-size: var(--font-normal);
   font-weight: var(--font-bold);
-  top: 13px;
+  top: 20px;
   left: 15px;
 }
 .weather-box__summary img {

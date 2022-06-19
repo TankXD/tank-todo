@@ -20,22 +20,29 @@ function deleteToDo(event) {
   saveToDo();
 }
 
+function checkToDo(event) {
+  const checkList = event.currentTarget;
+  checkList.classList.toggle("todo-check");
+}
+
 function addToDo(newToDo) {
   const li = document.createElement("li");
   li.id = newToDo.id;
   const span = document.createElement("span");
   span.innerHTML = newToDo.text;
+  const checkBtn = document.createElement("button");
+  checkBtn.innerHTML = "🤍";
   const deleteBtn = document.createElement("button");
   const deleteIcon = document.createElement("i");
   deleteIcon.className = "fa-solid fa-trash-can";
   deleteBtn.appendChild(deleteIcon);
-  const finishBtn = document.createElement("button");
-  finishBtn.innerHTML = "🤍";
 
   li.appendChild(span);
+  li.prepend(checkBtn);
   li.appendChild(deleteBtn);
-  li.prepend(finishBtn);
   toDoList.appendChild(li);
+
+  checkBtn.addEventListener("click", checkToDo);
   deleteBtn.addEventListener("click", deleteToDo);
 }
 

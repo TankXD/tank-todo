@@ -1,0 +1,73 @@
+.quote-box {
+  width: 650px;
+  height: 110px;
+
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(146, 146, 146, 0.123);
+  border: 1px solid rgba(65, 65, 65, 0.096);
+  border-radius: 20px;
+  box-shadow: var(--shadow-normal);
+
+  position: relative;
+  transition: all 0.45s ease;
+}
+
+.quote-box:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.quote-box__title {
+  font-size: 24px;
+  opacity: 0.7;
+  font-weight: var(--font-bold);
+  transition: all 0.3s ease-in-out;
+}
+
+.quote-box__main {
+  font-size: 15px;
+  /* background-color: rgba(75, 75, 75, 0.096); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+
+  width: 85%;
+}
+
+.quote-box__text {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.quote-box__language {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+}
+
+.quote-box__title:hover {
+  transform: scale(1.1);
+}
+.quote-box__title:hover,
+.quote-box__text:hover {
+  opacity: 1;
+  /* color: var(--navy); */
+}
+
+.quote-box__language:hover {
+  opacity: 1;
+  color: var(--navy);
+
+  transform: scale(1.1) rotateZ(180deg);
+}

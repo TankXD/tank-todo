@@ -1,4 +1,6 @@
 .music-box iframe {
-  border: 10px solid rgba(255, 255, 255, 0.8);
+  /* border: 10px solid rgba(255, 255, 255, 0.8); */
+  border: 10px solid rgba(255, 255, 255, 0.733);
   border-radius: 15px;
+  box-shadow: var(--shadow-normal);
 }

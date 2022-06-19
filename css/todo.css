@@ -1,29 +1,82 @@
 .content-center h2 {
-  font-size: var(--font-medium);
+  font-size: 22px;
   font-weight: var(--font-bold);
+  opacity: 0.8;
 }
 
 .todo-form input {
   border: none;
   border-bottom: 1px solid var(--grey);
-
-  /* border-radius: 40px; */
-  width: 90%;
+  border-radius: 15px;
+  width: 93%;
   padding: 10px;
   margin: 20px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow-normal);
+  transition: all 0.3s ease-in-out;
 }
 
 .todo-form input::placeholder {
   font-size: var(--font-small);
+  opacity: 0.7;
+}
+
+.todo-form input:hover {
+  transform: scale(1.05);
+}
+
+.todo-form input:focus {
+  outline: none;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 32px;
+  position: relative;
+  margin-bottom: 8px;
+  transition: all 0.4s ease;
+  box-shadow: 0.2px 0.2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.todo-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.todo-list li button:first-child,
+.todo-list li button:last-child {
+  background: none;
+  border: none;
+  font-size: 17px;
+  opacity: 0.6;
+}
+.todo-list li button:first-child {
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-list li button:first-child:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.todo-check {
+  filter: opacity(0.5) drop-shadow(0 0 0 red);
+}
+
+.todo-list li button:last-child {
+  position: absolute;
+  right: 0px;
   opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.todo-list li button:last-child:hover {
+  opacity: 0.8;
 }
 
-.todo-list button:first-child {
-  background: none;
-  border: none;
-}
-
-.todo-list button:last-child {
-  background: none;
-  border: none;
+.todo-list li span {
+  font-size: 18px;
+  /* font-weight: var(--font-semi-bold); */
+  opacity: 0.8;
 }
