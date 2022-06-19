@@ -10,6 +10,8 @@
 @import "button.css";
 @import "music.css";
 @import "todo.css";
+@import "weather.css";
+@import "link.css";
 
 body {
   font-family: "Nunito", sans-serif;

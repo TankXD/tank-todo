@@ -9,7 +9,7 @@
     <script defer src="js/login.js"></script>
     <script defer src="js/clock.js"></script>
     <script defer src="js/darkmode.js"></script>
-    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/84cbe2bb98.js"
@@ -20,32 +20,13 @@
     <div class="main-screen">
       <main class="main-box">
         <section class="content-left">
-          <div class="clock-box">
-            <h4 class="clock-box__time"></h4>
-            <span class="clock-box__date"></span>
-          </div>
-        </section>
-        <section class="content-center">
-          <div class="todo-box">
-            <h2>To-Do List</h2>
-            <form class="todo-form">
-              <input
-                required
-                type="text"
-                placeholder="Please enter your to-do"
-              />
-            </form>
-            <ul class="todo-list"></ul>
-          </div>
-        </section>
-        <section class="content-right">
           <div class="greeting">
             <h1></h1>
           </div>
           <div class="music-box">
             <iframe
               width="300"
-              height="300"
+              height="200"
               src="https://www.youtube.com/embed/Zy_KuTFwot4"
               title="YouTube video player"
               frameborder="0"
@@ -66,6 +47,39 @@
                 <i class="fa-solid fa-right-from-bracket"></i>
               </button>
             </form>
+          </div>
+        </section>
+        <section class="content-center">
+          <div class="todo-box">
+            <h2>To-Do List</h2>
+            <form class="todo-form">
+              <input
+                required
+                type="text"
+                placeholder="Please enter your to-do
+            "
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+        </section>
+        <section class="content-right">
+          <div class="clock-box">
+            <h4 class="clock-box__time"></h4>
+            <span class="clock-box__date"></span>
+          </div>
+          <div class="weather-box">
+            <h4 class="weather-title">Today's weather</h4>
+            <div class="weather-box__left">
+              <div class="weather-box__summary"></div>
+            </div>
+            <div class="weather-box__right">
+              <span class="weather-box__temper"></span>
+              <span class="weather-box__address"></span>
+            </div>
+          </div>
+          <div class="link-box">
+            <img src="img/github-grey.png" /><span>TankXD</span>
           </div>
         </section>
       </main>

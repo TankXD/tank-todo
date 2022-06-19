@@ -59,4 +59,5 @@
 
 .login-form__btn:hover {
   background-color: var(--blue);
+  transform: scale(1.2);
 }

@@ -1,0 +1,13 @@
+.link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-box img {
+  width: 26px;
+}
+.link-box span {
+  margin-left: 10px;
+  font-size: 20px;
+}

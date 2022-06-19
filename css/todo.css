@@ -1,0 +1,29 @@
+.content-center h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--font-bold);
+}
+
+.todo-form input {
+  border: none;
+  border-bottom: 1px solid var(--grey);
+
+  /* border-radius: 40px; */
+  width: 90%;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.todo-form input::placeholder {
+  font-size: var(--font-small);
+  opacity: 0.5;
+}
+
+.todo-list button:first-child {
+  background: none;
+  border: none;
+}
+
+.todo-list button:last-child {
+  background: none;
+  border: none;
+}

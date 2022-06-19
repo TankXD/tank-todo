@@ -14,7 +14,6 @@ function saveToDo(newToDo) {
 
 function deleteToDo(event) {
   const parentList = event.currentTarget.parentElement;
-  console.log(parentList.id, toDos[0].id);
 
   parentList.remove();
   toDos = toDos.filter((item) => item.id !== parseInt(parentList.id));
@@ -31,10 +30,11 @@ function addToDo(newToDo) {
   deleteIcon.className = "fa-solid fa-trash-can";
   deleteBtn.appendChild(deleteIcon);
   const finishBtn = document.createElement("button");
-  finishBtn.innerHTML = "💚";
+  finishBtn.innerHTML = "🤍";
+
   li.appendChild(span);
   li.appendChild(deleteBtn);
-  li.appendChild(finishBtn);
+  li.prepend(finishBtn);
   toDoList.appendChild(li);
   deleteBtn.addEventListener("click", deleteToDo);
 }
@@ -54,8 +54,6 @@ function submitToDo(event) {
 toDoForm.addEventListener("submit", submitToDo);
 
 const localToDos = JSON.parse(localStorage.getItem(TODOS_KEY));
-
-console.log(localToDos);
 
 if (localToDos !== null) {
   localToDos.forEach(addToDo);
